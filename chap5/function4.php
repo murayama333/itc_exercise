@@ -1,9 +1,8 @@
 <?php
 function hello($count){
-	for($i = 0; $i < 3; $i++){
+	for($i = 0; $i < $count; $i++){
 		echo "hello" . PHP_EOL;
 	}
 }
 
-hello("IT CARET");
-
+hello(5);
