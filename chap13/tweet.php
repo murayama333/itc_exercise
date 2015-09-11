@@ -1,5 +1,4 @@
 <?php
-
 function getTweets(){
     $tweets = [];
     $lines = file("tweet.csv", FILE_IGNORE_NEW_LINES);
@@ -7,6 +6,7 @@ function getTweets(){
         $tweet = explode(",", $line);
         $tweets[] = $tweet;
     }
+    $tweets = array_reverse($tweets);
     return $tweets;
 }
 
