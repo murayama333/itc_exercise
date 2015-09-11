@@ -1,7 +1,7 @@
 <?php
-// セッションを開始
+
 session_start();
-// セッションからユーザIDを取得
+
 $userID = $_SESSION["userID"];
 ?>
 

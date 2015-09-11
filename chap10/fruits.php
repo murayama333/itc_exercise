@@ -5,7 +5,7 @@ $type = $_POST["type"];
 $color = "black";
 if ($fruits === "apple" || $fruits === "cherry") {
     $color = "red";
-} elseif($fruits === "banana"){
+} else if($fruits === "banana"){
     $color = "yellow";
 }
 ?>
