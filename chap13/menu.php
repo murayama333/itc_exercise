@@ -12,7 +12,7 @@ $userID = $_SESSION["userID"];
 </head>
 <body>  
     <img src="logo.png">
-    <?php echo $userID . "さんでログイン中"; ?>
+    <?php echo htmlspecialchars($userID) . "さんでログイン中"; ?>
     <hr>
     <ul>
         <li><a href="tweet.php">tweet</a></li>

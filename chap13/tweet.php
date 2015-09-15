@@ -24,7 +24,7 @@ $tweets = getTweets();
 </head>
 <body>  
     <img src="logo.png">
-    <?php echo $userID . "さんでログイン中"; ?>
+    <?php echo htmlspecialchars($userID) . "さんでログイン中"; ?>
     <hr>
     <form action="tweet_controller.php" method="post">
         <input type="text" name="comment">
@@ -33,8 +33,8 @@ $tweets = getTweets();
 
     <ul>
     <?php foreach ($tweets as $tweet) { ?>
-        <li><?php echo $tweet[0]; ?>
-            <span style="font-size:14px">(<?php echo $tweet[1] . "/" . $tweet[2]; ?>)</span>
+        <li><?php echo htmlspecialchars($tweet[0]); ?>
+            <span style="font-size:14px">(<?php echo htmlspecialchars($tweet[1] . "/" . $tweet[2]); ?>)</span>
         </li>
     <?php } ?>
     </ul>
