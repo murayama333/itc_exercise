@@ -1,10 +1,10 @@
 <?php
-function checkAge($age){
+function check_age($age){
 	if ($age >= 20) {
 		return "OK";
 	}
 	return "NG";
 }
 
-$result = checkAge(20);
+$result = check_age(20);
 echo $result . PHP_EOL;
