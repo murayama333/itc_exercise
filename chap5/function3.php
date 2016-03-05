@@ -1,7 +1,7 @@
 <?php
-function addMark($str){
+function add_mark($str){
 	return "*" . $str . "*";
 }
 
-$result = addMark("IT CARET");
+$result = add_mark("IT CARET");
 echo $result . PHP_EOL;
