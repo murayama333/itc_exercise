@@ -1,5 +1,5 @@
 <?php
-function maxValue($points){
+function max_value($points){
 	$max = 0;
 	for($i = 0; $i < count($points); $i++){
 		if ($max < $points[$i]) {
@@ -9,5 +9,5 @@ function maxValue($points){
 	return $max;
 }
 
-$result = maxValue([20, 42, 15]);
+$result = max_value([20, 42, 15]);
 echo $result . PHP_EOL;
